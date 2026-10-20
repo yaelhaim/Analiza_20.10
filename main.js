@@ -8,4 +8,10 @@ let number = 1234; // INPUT
 // (keep the "// INPUT" comments - the tests use them to try other values)
 
 // write your code below this line
+let reverse = 0;
+for (let i = 1000; i >= 1; i /= 10) {
 
+    reverse += (number % 10) * i;
+    number = Math.floor(number / 10);
+}
+console.log(reverse);
