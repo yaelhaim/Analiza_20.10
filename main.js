@@ -7,4 +7,9 @@ let number = 58423; // INPUT
 // (keep the "// INPUT" comments - the tests use them to try other values)
 
 // write your code below this line
-
+let sum = 0;
+while (number > 0) {
+    sum += number % 10;
+    number = Math.floor(number / 10);
+}
+console.log(`Sum is ${sum}`);
