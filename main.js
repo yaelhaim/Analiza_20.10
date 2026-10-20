@@ -8,3 +8,9 @@ let number = 10045; // INPUT
 
 // write your code below this line
 
+let count = 0;
+while (number != 0) {
+    number = Math.floor(number / 10);
+    count++;
+}
+console.log(count);
